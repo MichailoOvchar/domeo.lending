@@ -35,12 +35,14 @@ for (var i = 0; i < aElem.length; i++) {
     aElem[i].addEventListener('click', function (e) {
       e.preventDefault();
       modalObj.style.top = '0';
+      document.getElementsByTagName("body")[0].style.overflow = 'hidden';
     });
   }
 }
 
 modalObj.addEventListener('click', function () {
   modalObj.style.top = '-200vh';
+  document.getElementsByTagName("body")[0].style.overflow = 'visible';
 });
 document.querySelector('#modal > div > div > div.col-12.col-sm-12.col-md-12.col-lg-7.col-xl-7 > div').addEventListener('click', function (e) {
   e.stopPropagation();
