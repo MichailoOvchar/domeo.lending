@@ -51,24 +51,26 @@ $(document).ready(function () {
 $("form").on("submit", function () {
   var url = $(this).attr("action");
   $this = $(this);
-  $.ajax({
-    url: url,
-    type: "post",
-    dataType: "json",
-    success: function success(response) {
-      window.location.href = $this.data("thanks"); // if(response.hasOwnProperty("status")){
-      //     if(response.status == "success"){
-      //         window.location.href = $this.data("thanks");
-      //     }
-      // }
-      // else{
-      //     alert("Error!!!");
-      // }
-    },
-    error: function error(response) {
-      console.warn(response);
-    }
-  });
+  window.location.href = $this.data("thanks"); // $.ajax({
+  //     url: url,
+  //     type: "post",
+  //     dataType: "json",
+  //     success: function(response){
+  //         window.location.href = $this.data("thanks");
+  //         // if(response.hasOwnProperty("status")){
+  //         //     if(response.status == "success"){
+  //         //         window.location.href = $this.data("thanks");
+  //         //     }
+  //         // }
+  //         // else{
+  //         //     alert("Error!!!");
+  //         // }
+  //     },
+  //     error: function(response){
+  //         console.warn(response);
+  //     },
+  // })
+
   return false;
 });
 
