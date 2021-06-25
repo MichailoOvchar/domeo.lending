@@ -411,8 +411,7 @@
                         Электромонтажные и сантехнические работы
                         </p>
                     </div>
-
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 alert-massege">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11 alert-massege">
                         <img src="/img/icon/emojione-monotone_white-exclamation-mark.svg" alt="!">
                         <p>Чем больше работы вы делаете, тем больше мы платим вам, <span>без ограничений в зарплате</span></p>
                     </div>
