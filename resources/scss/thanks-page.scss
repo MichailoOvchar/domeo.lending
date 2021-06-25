@@ -1,0 +1,27 @@
+main{
+    #thanks-page{
+        width: 100%;
+        min-height: 67.2vh;
+        margin-top: 50px;
+        
+        @media (max-width: 768px) {
+            margin-bottom: 50px;
+        }
+
+        .title-text{
+            h2{
+                margin-bottom: 30px;
+            }
+        }
+        p{
+            font-size: 1.3rem;
+            span{
+                font-weight: 600;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 1.14rem;
+            }
+        }
+    }
+}
