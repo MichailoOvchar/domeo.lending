@@ -56,13 +56,14 @@ $("form").on("submit", function () {
     type: "post",
     dataType: "json",
     success: function success(response) {
-      if (response.hasOwnProperty("status")) {
-        if (response.status == "success") {
-          window.location.href = $this.data("thanks");
-        }
-      } else {
-        alert("Error!!!");
-      }
+      window.location.href = $this.data("thanks"); // if(response.hasOwnProperty("status")){
+      //     if(response.status == "success"){
+      //         window.location.href = $this.data("thanks");
+      //     }
+      // }
+      // else{
+      //     alert("Error!!!");
+      // }
     },
     error: function error(response) {
       console.warn(response);

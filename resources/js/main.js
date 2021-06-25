@@ -32,14 +32,15 @@ $("form").on("submit", function(){
         type: "post",
         dataType: "json",
         success: function(response){
-            if(response.hasOwnProperty("status")){
-                if(response.status == "success"){
-                    window.location.href = $this.data("thanks");
-                }
-            }
-            else{
-                alert("Error!!!");
-            }
+            window.location.href = $this.data("thanks");
+            // if(response.hasOwnProperty("status")){
+            //     if(response.status == "success"){
+            //         window.location.href = $this.data("thanks");
+            //     }
+            // }
+            // else{
+            //     alert("Error!!!");
+            // }
         },
         error: function(response){
             console.warn(response);
