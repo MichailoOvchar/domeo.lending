@@ -748,20 +748,28 @@ main #question .massege {
   padding: 0 15px;
   position: absolute;
   z-index: -1;
-  bottom: 150px;
+  bottom: 100px;
 }
 main #question .massege .alert-massege {
   text-align: center;
-  padding-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
   padding-right: 10%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  main #question .massege .alert-massege {
+    padding-right: 17%;
+  }
+}
+@media (max-width: 1000px) {
   main #question .massege {
     position: relative;
     bottom: 20px;
   }
   main #question .massege .alert-massege {
-    padding-top: 40px;
+    padding-top: 60px;
+    padding-right: 50px;
   }
 }
 main #about {

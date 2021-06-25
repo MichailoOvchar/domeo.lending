@@ -774,17 +774,24 @@ main{
             padding: 0 15px;
             position: absolute;
             z-index: -1;
-            bottom: 150px;
+            bottom: 100px;
             .alert-massege{
                 text-align: center;
-                padding-left: 30px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
                 padding-right: 10%;
+
+                @media (max-width: 1200px) {
+                    padding-right: 17%;
+                }
             }
-            @media (max-width: 768px) {
+            @media (max-width: 1000px) {
                 position: relative;
                 bottom: 20px;
                 .alert-massege{
-                    padding-top: 40px;
+                    padding-top: 60px;
+                    padding-right: 50px;
                 }
             }
         }
