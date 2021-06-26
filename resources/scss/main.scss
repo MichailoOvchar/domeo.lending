@@ -131,6 +131,7 @@ a.button{
     }
 
     .form-section{
+        position: relative;
         padding: 40px 73px;
         box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.07), 
                     0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198), 
@@ -141,6 +142,18 @@ a.button{
         border-radius: 10px;
         @media (max-width: 768px) {
             padding: 40px 10px;
+        }
+
+        .close{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            padding: 0;
+            background-color: transparent;
+            border-width: 0;
+            color: #272727;
+            transform: rotate(45deg);
         }
 
         h3{

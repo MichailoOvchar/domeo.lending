@@ -1,5 +1,6 @@
 var aElem = document.getElementsByTagName('a');
 var modalObj = document.getElementById('modal');
+var closeModal = document.getElementsByClassName('close')[0];
 
 for(var i=0; i < aElem.length; i++){
     if(aElem[i].matches('a[href="#modal"]')){
@@ -11,6 +12,10 @@ for(var i=0; i < aElem.length; i++){
     }
 }
 
+closeModal.addEventListener('click', ()=>{
+    modalObj.style.top = '-200vh';
+    document.getElementsByTagName("body")[0].style.overflow = 'visible';
+});
 modalObj.addEventListener('click', ()=>{
     modalObj.style.top = '-200vh';
     document.getElementsByTagName("body")[0].style.overflow = 'visible';
