@@ -799,11 +799,11 @@ main{
                     border-bottom: 138px solid transparent;
                     &.left{
                         border-right: 50px solid #FAFAFA;
-                        left: -50px;
+                        left: -49px;
                     }
                     &.right{
                         border-left: 50px solid #FAFAFA;
-                        right: -50px;
+                        right: -49px;
                     }
                     @media(max-width: 1300px) {
                         border-top: 15vh solid transparent;

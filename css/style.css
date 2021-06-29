@@ -773,11 +773,11 @@ main #job .picture-box .text div {
 }
 main #job .picture-box .text div.left {
   border-right: 50px solid #FAFAFA;
-  left: -50px;
+  left: -49px;
 }
 main #job .picture-box .text div.right {
   border-left: 50px solid #FAFAFA;
-  right: -50px;
+  right: -49px;
 }
 @media (max-width: 1300px) {
   main #job .picture-box .text div {
