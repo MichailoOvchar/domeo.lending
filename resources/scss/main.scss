@@ -30,7 +30,7 @@ button{
     }
 
     @media(max-width: 768px){
-        font-size: 1rem;
+        font-size: 0.86rem;
         padding: 25.5px 35.5px;
     }
 }
@@ -55,7 +55,7 @@ a.button{
     }
 
     @media(max-width: 768px){
-        font-size: 1rem;
+        font-size: 0.86rem;
         padding: 25.5px 35.5px;
         margin: 0 auto;
     }
@@ -127,7 +127,10 @@ a.button{
     padding-bottom: 50px;
 
     @media (max-width: 768px) {
-        padding: 20px;
+        padding: 15px 0;
+        .container{
+            width: 100%;
+        }
     }
 
     .form-section{
@@ -141,19 +144,28 @@ a.button{
                     0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
         border-radius: 10px;
         @media (max-width: 768px) {
-            padding: 40px 10px;
+            padding: 30px 10px;
+            @media (max-width: 420px) {
+                padding: 15px 10px;
+            }
         }
 
         .close{
             position: absolute;
             top: 15px;
             right: 25px;
+            z-index: 2;
             font-size: 2rem;
             padding: 0;
             background-color: transparent;
             border-width: 0;
             color: #272727;
             transform: rotate(45deg);
+
+            @media (max-width: 768px) {
+                top: 5px;
+                right: 8px;
+            }
         }
 
         h3{
@@ -162,6 +174,35 @@ a.button{
                 font-size: 1.2rem;
             }
             margin-bottom: 0;
+        }
+
+        @media (max-width: 420px) {
+            h3{
+                font-size: 1.7rem;
+                p{
+                    font-size: 1.14rem;
+                }
+            }
+
+            form{
+                padding-top: 0;
+                label{
+                    font-size: 0.86rem;
+                }
+                input{
+                    font-size: 0.86rem;
+                }
+
+                .button{
+                    padding-top: 15px;
+                    button{
+                        font-size: 0.76rem;
+                    }
+                    p{
+                        font-size: 0.6rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -448,6 +489,7 @@ main{
                     font-size: 1.14rem;
                 }
                 input{
+                    padding: 15px 20px;
                     font-size: 1.14rem;
                 }
             }

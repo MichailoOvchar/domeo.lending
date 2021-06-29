@@ -33,7 +33,7 @@ button:hover {
 }
 @media (max-width: 768px) {
   button {
-    font-size: 1rem;
+    font-size: 0.86rem;
     padding: 25.5px 35.5px;
   }
 }
@@ -61,7 +61,7 @@ a.button:hover {
 }
 @media (max-width: 768px) {
   a.button {
-    font-size: 1rem;
+    font-size: 0.86rem;
     padding: 25.5px 35.5px;
     margin: 0 auto;
   }
@@ -136,7 +136,10 @@ a.button:hover {
 }
 @media (max-width: 768px) {
   #modal {
-    padding: 20px;
+    padding: 15px 0;
+  }
+  #modal .container {
+    width: 100%;
   }
 }
 #modal .form-section {
@@ -147,13 +150,19 @@ a.button:hover {
 }
 @media (max-width: 768px) {
   #modal .form-section {
-    padding: 40px 10px;
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 768px) and (max-width: 420px) {
+  #modal .form-section {
+    padding: 15px 10px;
   }
 }
 #modal .form-section .close {
   position: absolute;
   top: 15px;
   right: 25px;
+  z-index: 2;
   font-size: 2rem;
   padding: 0;
   background-color: transparent;
@@ -161,12 +170,44 @@ a.button:hover {
   color: #272727;
   transform: rotate(45deg);
 }
+@media (max-width: 768px) {
+  #modal .form-section .close {
+    top: 5px;
+    right: 8px;
+  }
+}
 #modal .form-section h3 {
   font-size: 2.5rem;
   margin-bottom: 0;
 }
 #modal .form-section h3 p {
   font-size: 1.2rem;
+}
+@media (max-width: 420px) {
+  #modal .form-section h3 {
+    font-size: 1.7rem;
+  }
+  #modal .form-section h3 p {
+    font-size: 1.14rem;
+  }
+  #modal .form-section form {
+    padding-top: 0;
+  }
+  #modal .form-section form label {
+    font-size: 0.86rem;
+  }
+  #modal .form-section form input {
+    font-size: 0.86rem;
+  }
+  #modal .form-section form .button {
+    padding-top: 15px;
+  }
+  #modal .form-section form .button button {
+    font-size: 0.76rem;
+  }
+  #modal .form-section form .button p {
+    font-size: 0.6rem;
+  }
 }
 
 header {
@@ -447,6 +488,7 @@ main .form-section form input {
     font-size: 1.14rem;
   }
   main .form-section form input {
+    padding: 15px 20px;
     font-size: 1.14rem;
   }
 }
