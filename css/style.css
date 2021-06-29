@@ -33,7 +33,7 @@ button:hover {
 }
 @media (max-width: 768px) {
   button {
-    font-size: 0.86rem;
+    font-size: 0.96rem;
     padding: 25.5px 35.5px;
   }
 }
@@ -61,7 +61,7 @@ a.button:hover {
 }
 @media (max-width: 768px) {
   a.button {
-    font-size: 0.86rem;
+    font-size: 0.96rem;
     padding: 25.5px 35.5px;
     margin: 0 auto;
   }
