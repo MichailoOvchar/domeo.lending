@@ -52,22 +52,26 @@ modalObj.addEventListener('click', function () {
 document.querySelector('#modal > div > div > div.col-12.col-sm-12.col-md-12.col-lg-7.col-xl-7 > div').addEventListener('click', function (e) {
   e.stopPropagation();
 });
-$(document).ready(function () {
-  if (window.screen.availWidth <= 768) {
-    $(".owl-carousel").owlCarousel({
-      items: 1,
-      center: true,
-      loop: true,
-      nav: true,
-      autoplaySpeed: 1500,
-      autoplayHoverPause: true,
-      dots: false
-    }).css("margin-left", "0");
-    $("#condition").on("mouseenter", function (e) {
-      owl.trigger('play.owl.autoplay', 5000);
-    });
-  }
 
+if (window.screen.availWidth <= 768) {
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    center: true,
+    loop: true,
+    nav: true,
+    lazyLoad: true,
+    autoplaySpeed: 1500,
+    autoplayHoverPause: true,
+    dots: false
+  }).css("margin-left", "0");
+  $(window).on('scroll', function () {
+    //let pos = $(this).offset();
+    var elem = $('.owl-carousel').position();
+    console.log(elem);
+  });
+}
+
+$(document).ready(function () {
   $('input[type="tel"]').inputmask("+7 (999)999-99-99");
 });
 var forms = document.getElementsByTagName("form");
