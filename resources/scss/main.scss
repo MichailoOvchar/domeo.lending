@@ -61,7 +61,7 @@ a.button{
     }
 }
 .alert-massege{
-    padding: 25px 0;
+    padding: 25px 7px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -528,6 +528,10 @@ main{
             .title-text{
                 text-align: center;
             }
+
+            @media (max-width: 768px) {
+                margin-bottom: 30px;
+            }
         }
         .blocks{
             position: relative;
@@ -594,9 +598,24 @@ main{
                 top: 0;
                 left: 0;
                 font-size: 3rem;
+                button{
+                    color: #272727;
+                }
+                .owl-prev{
+                    span{
+                        padding-right: 10px;
+                    }
+                }
+                .owl-next{
+                    span{
+                        padding-left: 10px;
+                    }
+                }
             }
         }
         .massege{
+            margin-right: 0;
+            margin-left: 0;
             .alert-massege{
                 position: relative;
                 z-index: -1;

@@ -68,7 +68,7 @@ a.button:hover {
 }
 
 .alert-massege {
-  padding: 25px 0;
+  padding: 25px 7px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -526,6 +526,11 @@ main #condition .title .image img {
 main #condition .title .title-text {
   text-align: center;
 }
+@media (max-width: 768px) {
+  main #condition .title {
+    margin-bottom: 30px;
+  }
+}
 main #condition .blocks {
   position: relative;
   z-index: 1;
@@ -581,6 +586,19 @@ main #condition .owl-carousel .owl-nav {
   top: 0;
   left: 0;
   font-size: 3rem;
+}
+main #condition .owl-carousel .owl-nav button {
+  color: #272727;
+}
+main #condition .owl-carousel .owl-nav .owl-prev span {
+  padding-right: 10px;
+}
+main #condition .owl-carousel .owl-nav .owl-next span {
+  padding-left: 10px;
+}
+main #condition .massege {
+  margin-right: 0;
+  margin-left: 0;
 }
 main #condition .massege .alert-massege {
   position: relative;
