@@ -39,9 +39,11 @@ if(window.screen.availWidth <= 768){
     }).css("margin-left", "0");
 
     $(window).on('scroll', function(){
-        //let pos = $(this).offset();
+        let pos = $(this).scrollTop();
         let elem = $('.owl-carousel').position();
-        console.log(elem);
+        if(pos >= (elem.top - $(this).height())){
+            $(".owl-carousel").trigger('play.owl.autoplay', 3000);
+        }
     });
 }
 
