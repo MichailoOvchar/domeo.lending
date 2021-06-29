@@ -525,11 +525,18 @@ main{
                         }
                     }
                 }
+                @media(max-width: 768px){
+                    padding: 30px;
+                    //padding-top: 10px;
+                }
+            }
+
+            .owl-stage{
+                overflow: visible;
             }
             
         }
         .massege{
-            padding: 15px;
             .alert-massege{
                 position: relative;
                 z-index: -1;

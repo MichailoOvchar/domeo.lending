@@ -52,7 +52,24 @@ modalObj.addEventListener('click', function () {
 document.querySelector('#modal > div > div > div.col-12.col-sm-12.col-md-12.col-lg-7.col-xl-7 > div').addEventListener('click', function (e) {
   e.stopPropagation();
 });
+window.addEventListener("resize", function (event) {
+  if (window.screen.availWidth > 768) {
+    $(".owl-carousel").owlCarousel(null).css("margin-left", "-15px");
+  }
+});
 $(document).ready(function () {
+  if (window.screen.availWidth <= 768) {
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      center: true,
+      loop: true,
+      nav: false,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      dots: false
+    }).css("margin-left", "0");
+  }
+
   $('input[type="tel"]').inputmask("+7 (999)999-99-99");
 });
 var forms = document.getElementsByTagName("form");

@@ -516,8 +516,13 @@ main #condition .blocks .col-12 .shadow-box p {
     font-size: 1.14rem;
   }
 }
-main #condition .massege {
-  padding: 15px;
+@media (max-width: 768px) {
+  main #condition .blocks .col-12 {
+    padding: 30px;
+  }
+}
+main #condition .blocks .owl-stage {
+  overflow: visible;
 }
 main #condition .massege .alert-massege {
   position: relative;
