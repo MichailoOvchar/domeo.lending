@@ -64,8 +64,8 @@ $(document).ready(function () {
       center: true,
       loop: true,
       nav: true,
-      autoplay: true,
-      autoplaySpeed: 1500,
+      //autoplay: true,
+      //autoplaySpeed: 1500,
       dots: false
     }).css("margin-left", "0");
   }

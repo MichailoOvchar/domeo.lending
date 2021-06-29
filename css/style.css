@@ -565,24 +565,22 @@ main #condition .blocks .col-12 .shadow-box p {
 }
 main #condition .owl-carousel .owl-stage {
   overflow: visible;
+  background-color: none;
 }
-main #condition .owl-carousel .owl-nav {
-  position: absolute;
+main #condition .owl-carousel .owl-stage .owl-item .shadow-box {
+  height: 230px;
   display: flex;
   align-items: center;
-  height: 100%;
+}
+main #condition .owl-carousel .owl-nav {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  margin-top: -15px;
   width: 100%;
   top: 0;
   left: 0;
   font-size: 3rem;
-}
-main #condition .owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  left: -15px;
-}
-main #condition .owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  right: -15px;
 }
 main #condition .massege .alert-massege {
   position: relative;
@@ -603,7 +601,7 @@ main #four-step {
 }
 main #four-step .title {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #FAFAFA;
 }
 main #four-step .title .title-text {
   margin-bottom: 20px;
@@ -614,6 +612,7 @@ main #four-step .title .title-text {
   }
 }
 main #four-step .form-section {
+  background-color: #FAFAFA;
   margin-top: 40px;
 }
 main #four-step .blocks {

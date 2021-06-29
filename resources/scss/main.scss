@@ -576,24 +576,24 @@ main{
         .owl-carousel{
             .owl-stage{
                 overflow: visible;
+                background-color: none;
+                .owl-item{
+                    .shadow-box{
+                        height: 230px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
             }
             .owl-nav{
-                position: absolute;
                 display: flex;
-                align-items: center;
-                height: 100%;
+                background-color: transparent;
+                justify-content: center;
+                margin-top: -15px;
                 width: 100%;
                 top: 0;
                 left: 0;
                 font-size: 3rem;
-                .owl-prev{
-                    position: absolute;
-                    left: -15px;
-                }
-                .owl-next{
-                    position: absolute;
-                    right: -15px;
-                }
             }
         }
         .massege{
@@ -618,7 +618,7 @@ main{
         
         .title{
             width: 100%;
-            background-color: #FFFFFF;
+            background-color: #FAFAFA;
             .title-text{
                 margin-bottom: 20px;
             }
@@ -627,6 +627,7 @@ main{
             margin-top: 80px;
         }
         .form-section{
+            background-color: #FAFAFA;
             margin-top: 40px;
         }
         .blocks{
