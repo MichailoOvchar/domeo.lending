@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   -webkit-appearance: none;
+  scroll-behavior: smooth;
 }
 
 input[type=submit], input[type=radio], input[type=checkbox] {
@@ -219,29 +220,81 @@ header {
 header div {
   margin: 5px 0;
 }
-header p {
+header button.navbar-toggler {
+  margin-right: 5px;
+  background: #41B619;
+  color: #fff;
+}
+header button.navbar-toggler:hover {
+  background: #269001;
+}
+header .logo-text {
+  display: block;
+  max-width: 340px;
+  color: #272727;
   padding-right: 40px;
   padding-left: 20px;
   line-height: 155%;
 }
 @media (max-width: 768px) {
-  header p {
+  header .logo-text {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
     padding-right: 15px;
   }
 }
-header div.logo img {
+header .logo img {
   width: 70px;
   height: 42px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-header div.phone {
+@media (max-width: 768px) {
+  header .logo {
+    padding-left: 10px;
+  }
+}
+header .anchore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
+  margin-right: 30px;
+}
+header .anchore p {
+  padding-right: 0;
+  padding-left: 0;
+}
+header .anchore p a {
+  width: 100%;
+  text-align: center;
+  color: #272727;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+header .anchore p a:hover {
+  color: #1d1d1d;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  header .anchore {
+    margin-right: 0;
+  }
+}
+header .phone {
   text-align: center;
 }
-header div.phone p {
+header .phone p {
   padding-right: 0;
 }
-header div.phone p a {
+header .phone p a {
   width: 100%;
   text-align: center;
   color: #41B619;
@@ -251,14 +304,14 @@ header div.phone p a {
   font-size: 1.2rem;
   text-decoration: underline;
 }
-header div.phone p a:hover {
+header .phone p a:hover {
   color: #269001;
 }
 @media (max-width: 768px) {
   header {
     text-align: center;
   }
-  header div.phone {
+  header .phone {
     display: none;
   }
 }

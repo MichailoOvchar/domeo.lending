@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     -webkit-appearance: none;
+    scroll-behavior: smooth;
 }
 input[type=submit], input[type=radio], input[type=checkbox]{
     -webkit-appearance: unset;
@@ -214,22 +215,74 @@ header{
     div{
         margin: 5px 0;
     }
-    p{
+
+    button.navbar-toggler{
+        margin-right: 5px;
+        background: #41B619;
+        color: #fff;
+        &:hover{
+            background: #269001;
+        }
+    }
+
+    .logo-text{
+        display: block;
+        max-width: 340px;
+        color: #272727;
         padding-right: 40px;
         padding-left: 20px;
         line-height: 155%;
         @media (max-width: 768px) {
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
             padding-right: 15px;
         }
     }
-    div.logo{
+    .logo{
         img{
             width: 70px;
             height: 42px;
             object-fit: cover;
         }
+        @media (max-width: 768px) {
+            padding-left: 10px;
+        }
     }
-    div.phone{
+    .anchore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+        margin-right: 30px;
+        p{
+            padding-right: 0;
+            padding-left: 0;
+            a{
+                width: 100%;
+                text-align: center;
+                color: #272727;
+                margin: 0;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 1rem;
+                text-decoration: none;
+                transition-duration: .5s;
+
+                &:hover{
+                    color: #1d1d1d;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+    .phone{
         text-align: center;
         p{
             padding-right: 0;
@@ -251,7 +304,7 @@ header{
     }
     @media(max-width: 768px){
         text-align: center;
-        div.phone{
+        .phone{
             display: none;
         }
     }
