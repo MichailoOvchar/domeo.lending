@@ -216,6 +216,25 @@ header{
         margin: 5px 0;
     }
 
+    .navbar-collapse{
+        transition: 0s;
+        @media (max-width: 768px) {
+            background-color: #FFFFFF;
+            position: absolute;
+            bottom: -100px;
+            right: 22px;
+            padding: 20px;
+            padding-bottom: 0;
+            border-radius: 10px;
+            box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.07), 
+                        0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198), 
+                        0px 3.57381px 17.869px rgba(0, 0, 0, 0.0417275), 
+                        0px 2.00345px 10.0172px rgba(0, 0, 0, 0.035), 
+                        0px 1.06402px 5.32008px rgba(0, 0, 0, 0.0282725), 
+                        0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
+        }
+    }
+
     button.navbar-toggler{
         margin-right: 5px;
         background: #41B619;
@@ -233,11 +252,12 @@ header{
         padding-left: 20px;
         line-height: 155%;
         @media (max-width: 768px) {
-            margin: 0 auto;
-            padding-top: 20px;
-            padding-bottom: 20px;
             text-align: center;
-            padding-right: 15px;
+            padding-right: 0;
+            padding-left: 0;
+            @media(max-width: 420px){
+                max-width: 160px;
+            }
         }
     }
     .logo{
@@ -248,6 +268,7 @@ header{
         }
         @media (max-width: 768px) {
             padding-left: 10px;
+            margin-right: 0;
         }
     }
     .anchore{

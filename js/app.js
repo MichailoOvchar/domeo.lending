@@ -49,6 +49,12 @@ modalObj.addEventListener('click', function () {
   modalObj.style.top = '-200vh';
   document.getElementsByTagName("body")[0].style.overflow = 'visible';
 });
+$(".anchore").on("click", function () {
+  if (window.screen.availWidth <= 768) {
+    $(".navbar-toggler").attr("aria-expanded", "false");
+    $(".navbar-collapse").attr("class", "navbar-collapse collapse");
+  }
+});
 document.querySelector('#modal > div > div > div.col-12.col-sm-12.col-md-12.col-lg-7.col-xl-7 > div').addEventListener('click', function (e) {
   e.stopPropagation();
 });
