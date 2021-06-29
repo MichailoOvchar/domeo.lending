@@ -536,11 +536,11 @@ main #condition .owl-carousel .owl-nav {
 }
 main #condition .owl-carousel .owl-nav .owl-prev {
   position: absolute;
-  left: -17px;
+  left: -15px;
 }
 main #condition .owl-carousel .owl-nav .owl-next {
   position: absolute;
-  right: -17px;
+  right: -15px;
 }
 main #condition .massege .alert-massege {
   position: relative;
