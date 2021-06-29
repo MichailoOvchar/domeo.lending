@@ -521,8 +521,26 @@ main #condition .blocks .col-12 .shadow-box p {
     padding: 30px;
   }
 }
-main #condition .blocks .owl-stage {
+main #condition .owl-carousel .owl-stage {
   overflow: visible;
+}
+main #condition .owl-carousel .owl-nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+}
+main #condition .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -17px;
+}
+main #condition .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -17px;
 }
 main #condition .massege .alert-massege {
   position: relative;

@@ -63,7 +63,7 @@ $(document).ready(function () {
       items: 1,
       center: true,
       loop: true,
-      nav: false,
+      nav: true,
       autoplay: true,
       autoplaySpeed: 1500,
       dots: false

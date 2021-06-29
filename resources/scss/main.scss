@@ -529,12 +529,30 @@ main{
                     padding: 30px;
                     //padding-top: 10px;
                 }
-            }
-
+            }            
+        }
+        .owl-carousel{
             .owl-stage{
                 overflow: visible;
             }
-            
+            .owl-nav{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                font-size: 3rem;
+                .owl-prev{
+                    position: absolute;
+                    left: -17px;
+                }
+                .owl-next{
+                    position: absolute;
+                    right: -17px;
+                }
+            }
         }
         .massege{
             .alert-massege{
