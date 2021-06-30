@@ -1,8 +1,8 @@
-var aElem = document.getElementsByTagName('a');
-var modalObj = document.getElementById('modal');
-var closeModal = document.getElementsByClassName('close')[0];
+let aElem = document.getElementsByTagName('a');
+let modalObj = document.getElementById('modal');
+let closeModal = document.getElementsByClassName('close')[0];
 
-for(var i=0; i < aElem.length; i++){
+for(let i=0; i < aElem.length; i++){
     if(aElem[i].matches('a[href="#modal"]')){
         aElem[i].addEventListener('click', (e)=>{
             e.preventDefault();
@@ -58,7 +58,7 @@ $(document).ready(function(){
     $('input[type="tel"]').inputmask("+7 (999)999-99-99");
 });
 
-var forms = document.getElementsByTagName("form");
+let forms = document.getElementsByTagName("form");
 for (let index = 0; index < forms.length; index++) {
     forms[index].addEventListener('submit', (e)=>{
         e.preventDefault();
