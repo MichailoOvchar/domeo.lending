@@ -283,10 +283,10 @@ header{
             padding-left: 0;
             a{
                 width: 100%;
-                text-align: center;
+                text-align: left;
                 color: #272727;
                 margin: 0;
-                font-weight: 600;
+                font-weight: 400;
                 letter-spacing: 1px;
                 font-size: 1rem;
                 text-decoration: none;
@@ -301,6 +301,7 @@ header{
 
         @media (max-width: 768px) {
             margin-right: 0;
+            justify-content: left;
         }
     }
     .phone{
