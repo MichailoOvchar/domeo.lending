@@ -63,7 +63,7 @@ for (let index = 0; index < forms.length; index++) {
     forms[index].addEventListener('submit', (e)=>{
         e.preventDefault();
         window.location.href = window.location.href + "/thanks-page.html";
-    })    
+    });    
 } 
 
 // $("form").on("submit", function(){ 
