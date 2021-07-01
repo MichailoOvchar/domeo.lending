@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121465679-18"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121465679-18');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./fonts/NotoSans/stylesheet.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/fonts/NotoSans/stylesheet.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Страничка с благодарностю</title>
 </head>
 <body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(56329810, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/56329810" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 logo">
                     <a href="/">
-                        <img src="./img/logo.png" alt="logo">
+                        <img src="/img/domeoLogo.png" alt="logo">
                     </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -56,7 +84,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 logo">
-                    <img src="./img/logo.png" alt="logo">
+                    <img src="/img/domeoLogo.png" alt="logo">
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <p>Прямые работодатели по ремонту квартир в Москве</p>
@@ -64,8 +92,8 @@
             </div>
         </div>
     </footer>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.inputmask.bundle.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.inputmask.bundle.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

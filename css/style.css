@@ -8,6 +8,11 @@ input[type=submit], input[type=radio], input[type=checkbox] {
   -webkit-appearance: unset;
 }
 
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,7 +37,7 @@ button {
 button:hover {
   background: #269001;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   button {
     font-size: 0.96rem;
     padding: 25.5px 35.5px;
@@ -60,7 +65,7 @@ a.button:hover {
   background: #269001;
   text-decoration: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   a.button {
     font-size: 0.96rem;
     padding: 25.5px 35.5px;
@@ -90,7 +95,7 @@ a.button:hover {
 .alert-massege p span {
   font-weight: 600;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .alert-massege {
     text-align: center;
     flex-direction: column;
@@ -114,7 +119,7 @@ a.button:hover {
 .title-text p {
   font-size: 1.28rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .title-text h2 {
     font-size: 1.7rem;
   }
@@ -135,7 +140,7 @@ a.button:hover {
   padding-top: 20px;
   padding-bottom: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #modal {
     padding: 15px 0;
   }
@@ -149,12 +154,12 @@ a.button:hover {
   box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.07), 0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 3.57381px 17.869px rgba(0, 0, 0, 0.0417275), 0px 2.00345px 10.0172px rgba(0, 0, 0, 0.035), 0px 1.06402px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
   border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #modal .form-section {
     padding: 30px 10px;
   }
 }
-@media (max-width: 768px) and (max-width: 420px) {
+@media (max-width: 1000px) and (max-width: 420px) {
   #modal .form-section {
     padding: 15px 10px;
   }
@@ -171,7 +176,7 @@ a.button:hover {
   color: #272727;
   transform: rotate(45deg);
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #modal .form-section .close {
     top: 5px;
     right: 8px;
@@ -223,7 +228,7 @@ header div {
 header .navbar-collapse {
   transition: 0s;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   header .navbar-collapse {
     background-color: #FFFFFF;
     position: absolute;
@@ -251,14 +256,14 @@ header .logo-text {
   padding-left: 20px;
   line-height: 155%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   header .logo-text {
     text-align: center;
     padding-right: 0;
     padding-left: 0;
   }
 }
-@media (max-width: 768px) and (max-width: 420px) {
+@media (max-width: 1000px) and (max-width: 420px) {
   header .logo-text {
     max-width: 160px;
   }
@@ -269,7 +274,7 @@ header .logo img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   header .logo {
     padding-left: 10px;
     margin-right: 0;
@@ -302,7 +307,7 @@ header .anchore p a:hover {
   color: #1d1d1d;
   text-decoration: underline;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   header .anchore {
     margin-right: 0;
     justify-content: left;
@@ -327,7 +332,7 @@ header .phone p a {
 header .phone p a:hover {
   color: #269001;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   header {
     text-align: center;
   }
@@ -375,7 +380,7 @@ main #intro .content .title h1 {
 main #intro .content .title h1 span {
   color: #0260E8;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #intro .content .title h1 {
     text-align: center;
     font-size: 1.86rem;
@@ -394,7 +399,7 @@ main #intro .content .info p {
 main #intro .content .info p span {
   font-weight: 600;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #intro .content .info {
     padding-right: 15px;
   }
@@ -437,7 +442,7 @@ main #intro .content .info-button-block-text p span {
 main #intro .content .info-button-block-text svg {
   float: right;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #intro .content .info-button-block-text {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -448,7 +453,7 @@ main #intro .content .info-button-block-text svg {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #intro .content .info-button-block {
     text-align: center;
     margin-top: 70px;
@@ -493,7 +498,7 @@ main #need .col-6 p {
   font-size: 1.24rem;
   line-height: 155%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #need h2 {
     font-size: 1.7rem;
   }
@@ -523,13 +528,13 @@ main .form-section h3 {
   text-align: center;
   font-size: 2.3rem;
   font-weight: 600;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 main .form-section h3 p {
   padding-top: 10px;
   font-size: 1.3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main .form-section h3 {
     font-size: 1.7rem;
   }
@@ -548,15 +553,16 @@ main .form-section form label {
   color: #000000;
 }
 main .form-section form input {
+  margin-top: 18px;
   width: 100%;
-  padding: 28px 29px;
+  padding: 20px;
   font-size: 1.14rem;
   background: #FFFFFF;
   border: 1px solid #41B619;
   box-sizing: border-box;
   border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main .form-section form label {
     font-size: 1.14rem;
   }
@@ -574,7 +580,7 @@ main .form-section .button p {
   margin: 10px auto;
   max-width: 340px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main .form-section .button p {
     font-size: 0.86rem;
   }
@@ -590,7 +596,7 @@ main #condition .title .image img {
   right: -20px;
   bottom: -70px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #condition .title .image img {
     position: static;
     width: 70%;
@@ -599,7 +605,7 @@ main #condition .title .image img {
 main #condition .title .title-text {
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #condition .title {
     margin-bottom: 30px;
   }
@@ -631,12 +637,12 @@ main #condition .blocks .col-12 .shadow-box h4 {
 main #condition .blocks .col-12 .shadow-box p {
   font-size: 1.28rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #condition .blocks .col-12 .shadow-box p {
     font-size: 1.14rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #condition .blocks .col-12 {
     padding: 30px;
   }
@@ -682,7 +688,7 @@ main #condition .massege .alert-massege {
 main #condition .massege .alert-massege p {
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #condition .massege .alert-massege {
     transform: translate(0);
   }
@@ -697,7 +703,7 @@ main #four-step .title {
 main #four-step .title .title-text {
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #four-step {
     margin-top: 80px;
   }
@@ -738,7 +744,7 @@ main #four-step .blocks .shadow-box p {
   font-weight: 600;
   transform: translate(0, -50%);
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #four-step .blocks .shadow-box p {
     font-size: 1.14rem;
   }
@@ -771,7 +777,7 @@ main #job .picture-box .col-xl-3 img {
      object-fit: cover;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #job .picture-box .col-xl-3 {
     padding: 15px;
   }
@@ -805,12 +811,12 @@ main #job .picture-box .text div.right {
     border-bottom: 15vh solid transparent;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #job .picture-box .text div {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #job .picture-box .text.before {
     display: none;
   }
@@ -818,7 +824,7 @@ main #job .picture-box .text div.right {
 main #job .picture-box .text.after {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #job .picture-box .text.after {
     display: flex;
   }
@@ -829,7 +835,7 @@ main #job .picture-box .text p {
   font-weight: 600;
   color: #272727;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #job .picture-box .text p {
     font-size: 1.14rem;
   }
@@ -856,7 +862,7 @@ main #question .interview .list p {
   font-weight: 600;
   line-height: 155%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #question .interview .list p {
     text-align: center;
     font-size: 1.14rem;
@@ -871,12 +877,14 @@ main #question .interview .list ul li {
   display: flex;
   align-items: center;
 }
-main #question .interview .list ul li img {
-  float: left;
+main #question .interview .list ul li i {
+  vertical-align: top;
+  font-size: 40px;
+  color: #DEDEDE;
 }
-@media (max-width: 768px) {
-  main #question .interview .list ul li img {
-    width: 25px;
+@media (max-width: 1000px) {
+  main #question .interview .list ul li i {
+    font-size: 25px;
   }
 }
 main #question .interview .list ul li span {
@@ -884,7 +892,7 @@ main #question .interview .list ul li span {
   margin-top: 5px;
   font-size: 1.3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #question .interview .list ul li span {
     font-size: 1.14rem;
   }
@@ -901,7 +909,7 @@ main #question .interview .form-section button {
 main #question .interview .form-section h3 p {
   font-size: 1.14rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #question .interview .form-section {
     padding: 40px 10px;
   }
@@ -946,7 +954,7 @@ main #about {
 main #about .content {
   padding-top: 60px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .content {
     padding-top: 30px;
   }
@@ -963,7 +971,7 @@ main #about .content .time p {
   font-weight: 600;
   color: #0260E8;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .content .time p {
     padding-top: 0;
   }
@@ -971,7 +979,7 @@ main #about .content .time p {
 main #about .content .time img {
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .content .time {
     font-size: 1.14rem;
   }
@@ -988,7 +996,7 @@ main #about .content .text p {
   font-size: 1.3rem;
   line-height: 155%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .content .text p {
     font-size: 1.14rem;
   }
@@ -1004,7 +1012,7 @@ main #about .massege {
   box-sizing: border-box;
   border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .massege {
     padding: 0 0 20px 0;
   }
@@ -1013,7 +1021,7 @@ main #about .massege-text {
   margin: 15px 0;
   order: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .massege-text {
     order: 2;
   }
@@ -1022,7 +1030,7 @@ main #about .massege-button {
   margin: 15px 0;
   order: 2;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .massege-button {
     order: 1;
   }
@@ -1038,7 +1046,7 @@ main #about .massege .label p {
   padding: 0 13px;
   background-color: #FAFAFA;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .massege .label {
     margin: 0 auto;
   }
@@ -1050,7 +1058,7 @@ main #about .massege p {
   text-align: center;
   color: #272727;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #about .massege p {
     font-size: 1.14rem;
   }
@@ -1061,7 +1069,7 @@ main #map {
   padding-bottom: 100px;
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #map {
     padding-bottom: 0;
   }
@@ -1079,12 +1087,13 @@ main #map .content .form-section {
   border-radius: 10px;
 }
 main #map .content .form-section button {
+  padding: 25px;
   width: 100%;
 }
 main #map .content .form-section h3 p {
   font-size: 1.14rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #map .content .form-section {
     padding: 40px 10px;
   }
@@ -1101,7 +1110,7 @@ main #map .content .map-box {
   right: 0;
   z-index: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #map .content .map-box {
     margin-top: 30px;
     position: static;
@@ -1112,12 +1121,12 @@ main #map .content .map-box iframe {
   width: 100%;
   height: 85vh;
 }
-@media (max-height: 768px) {
+@media (max-height: 1000px) {
   main #map .content .map-box iframe {
     height: 115vh;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #map .content .map-box iframe {
     height: 50vh;
   }
@@ -1139,7 +1148,7 @@ main #map .content .map-box .map-info h5 {
   font-size: 1.2rem;
   color: #0260E8;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main #map .content .map-box .map-info {
     position: static;
     border-top-left-radius: 0;
@@ -1160,7 +1169,7 @@ footer p {
   padding-left: 20px;
   line-height: 155%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   footer p {
     padding-right: 15px;
   }
@@ -1171,7 +1180,7 @@ footer div.logo img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   footer {
     text-align: center;
   }

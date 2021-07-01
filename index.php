@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121465679-18"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121465679-18');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./fonts/NotoSans/stylesheet.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/fonts/NotoSans/stylesheet.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Лендинг верстка</title>
 </head>
 <body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(56329810, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/56329810" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
               <a class="navbar-brand logo" href="/">
-                <img src="./img/logo.png" alt="logo">
+                <img src="/img/domeoLogo.png" alt="logo">
               </a>
               <span class="logo-text">
                 Прямые работодатели по ремонту квартир в Москве
@@ -46,8 +74,8 @@
         <section id="intro">
            <div class="container">
                 <picture>
-                    <source media="(max-width: 1024px)" srcset="./img/main-picture/pic-main-miniature.png">
-                    <img src="./img/main-picture/pic-main.png" alt="bacground" class="background">
+                    <source media="(max-width: 1024px)" srcset="/img/main-picture/pic-main-miniature.png">
+                    <img src="/img/main-picture/pic-main.png" alt="bacground" class="background">
                 </picture>
                 <div class="content row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 title">
@@ -63,19 +91,19 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 blocks">
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block">
-                                <img src="./img/icon/carbon_money.svg" alt="деньги">
+                                <img src="/img/icon/carbon_money.svg" alt="деньги">
                                 <p>Зарплата без задержек 2 раза в месяц</p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block">
-                                <img src="./img/icon/carbon_license-draft.svg" alt="деньги">
+                                <img src="/img/icon/carbon_license-draft.svg" alt="деньги">
                                 <p>Официальное трудоустройство</p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block">
-                                <img src="./img/icon/carbon_building-insights-3.svg" alt="деньги">
+                                <img src="/img/icon/carbon_building-insights-3.svg" alt="деньги">
                                 <p>Полный соц. пакет и возможность оформить кредит и ипотеку</p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block">
-                                <img src="./img/icon/carbon_calendar-tools.svg" alt="деньги">
+                                <img src="/img/icon/carbon_calendar-tools.svg" alt="деньги">
                                 <p>Работайте в своем темпе без простоя в заказах</p>
                             </div>
                         </div>
@@ -116,40 +144,40 @@
                         <h2>В компанию требуются:</h2>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Специалист по отделке</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Специалист по отделке</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Специалист по стяжке</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Специалист по стяжке</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Специалист-универсал</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Специалист-универсал</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Мастер по ГКЛ</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Мастер по ГКЛ</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Сантехник</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Сантехник</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Маляр</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Маляр</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Электрик</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Электрик</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Каменщик</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Каменщик</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Плиточник</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Плиточник</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Штукатур</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Штукатур</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>Плотник</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>Плотник</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                        <img src="./img/icon/akar-icons_person-check.svg" alt="person"><p>И другие</p>
+                        <img src="/img/icon/akar-icons_person-check.svg" alt="person"><p>И другие</p>
                     </div>
                 </div>
             </div>
@@ -158,7 +186,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 alert-massege">
-                        <img src="./img/icon/emojione-monotone_white-exclamation-mark.svg" alt="!">
+                        <img src="/img/icon/emojione-monotone_white-exclamation-mark.svg" alt="!">
                         <p>Для работы в нашей компании вам необходимо иметь <span>собственный инструмент и опыт работы от 3х лет</span></p>
                     </div>
                 </div>
@@ -174,19 +202,19 @@
                         </h3>
                     </div>
                 </div>
-                <form action="/ajax.php" data-thanks="./thanks-page.html">
+                <form action="/ajax.php" data-thanks="/thanks-page.php">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                            <label for="name-1">Введите Ваше имя</label>
-                            <input type="text" name="name" id="name-1" placeholder="Например, Алексей">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <input type="text" name="name" id="name-0" placeholder="Ваше имя*" required>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                            <label for="tel-1">Введите Ваш телефон</label>
-                            <input type="tel" name="phone" id="tel-1" placeholder="+7 (___)___-__-__" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <input type="tel" name="phone" id="tel-0" placeholder="Номер телефона*"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                            <label for="email-1">Введите Ваш email</label>
-                            <input type="email" name="email" id="email-1" placeholder="your-email@mail.com">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <input type="email" name="email" id="email-0" placeholder="Ваш email*" required>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <input type="number" min="10" max="80" name="age" id="age-0" placeholder="Ваш возраст*" required>
                         </div>
                     </div>
                     <div class="row button">
@@ -202,7 +230,7 @@
             <div class="container">
                 <div class="row title">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 image">
-                        <img src="./img/leptop.png" alt="leptop">
+                        <img src="/img/leptop.png" alt="leptop">
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 title-text">
                         <h2>
@@ -278,7 +306,7 @@
                 <div class="row massege">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 alert-massege">
-                        <img src="./img/icon/emojione-monotone_white-exclamation-mark.svg" alt="!">
+                        <img src="/img/icon/emojione-monotone_white-exclamation-mark.svg" alt="!">
                         <p>Мы понимаем, что хорошие мастера хотят получать большую зарплату и уважительное отношение
                            к себе и своему труду, поэтому мы делаем<br/><span>огромные усилия для комфортных условий работы в нашей компании</span></p>
                     </div>
@@ -306,28 +334,28 @@
                         <div class="shadow-box">
                             <h4>1</h4>
                             <p>Отправьте любую заявку на сайте</p>
-                            <img src="./img/icon/blue/carbon_license-draft.svg" alt="docum">
+                            <img src="/img/icon/blue/carbon_license-draft.svg" alt="docum">
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 block">
                         <div class="shadow-box">
                             <h4>2</h4>
                             <p>Собеседование по телефону</p>
-                            <img src="./img/icon/blue/carbon_phone-ip.svg" alt="phone">
+                            <img src="/img/icon/blue/carbon_phone-ip.svg" alt="phone">
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 block">
                         <div class="shadow-box">
                             <h4>3</h4>
                             <p>Собеседование в офисе</p>
-                            <img src="./img/icon/blue/carbon_collaborate.svg" alt="collaborate">
+                            <img src="/img/icon/blue/carbon_collaborate.svg" alt="collaborate">
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 block">
                         <div class="shadow-box">
                             <h4>4</h4>
                             <p>Приступаете к работе</p>
-                            <img src="./img/icon/blue/carbon_thumbs-up.svg" alt="docum">
+                            <img src="/img/icon/blue/carbon_thumbs-up.svg" alt="docum">
                         </div>
                     </div>
                 </div>
@@ -341,19 +369,19 @@
                         </h3>
                     </div>
                 </div>
-                <form action="/ajax.php" data-thanks="./thanks-page.html">
+                <form action="/ajax.php" data-thanks="/thanks-page.php">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                            <label for="name-0">Введите Ваше имя</label>
-                            <input type="text" name="name" id="name-0" placeholder="Например, Алексей">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <input type="text" name="name" id="name-1" placeholder="Ваше имя*" required>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                            <label for="tel-0">Введите Ваш телефон</label>
-                            <input type="tel" name="phone" id="tel-0" placeholder="+7 (___)___-__-__"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <input type="tel" name="phone" id="tel-1" placeholder="Номер телефона*"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                            <label for="email-0">Введите Ваш email</label>
-                            <input type="email" name="email" id="email-0" placeholder="your-email@mail.com">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <input type="email" name="email" id="email-1" placeholder="Ваш email*" required>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <input type="number" min="10" max="80" name="age" id="age-1" placeholder="Ваш возраст*" required>
                         </div>
                     </div>
                     <div class="row button">
@@ -379,7 +407,7 @@
                 </div>
                 <div class="row picture-box">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                        <img src="./img/job/job1.png" alt="job1">
+                        <img src="/img/job/job1.png" alt="job1">
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text">
                         <div class="left"></div>
@@ -388,7 +416,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                        <img src="./img/job/job2.png" alt="job2">
+                        <img src="/img/job/job2.png" alt="job2">
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text">
                         <div class="left"></div>
@@ -404,7 +432,7 @@
                     </div>
                     
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                        <img src="./img/job/job3.png" alt="job3">
+                        <img src="/img/job/job3.png" alt="job3">
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text after">
                         <p>
@@ -418,7 +446,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                        <img src="./img/job/job4.png" alt="job4">
+                        <img src="/img/job/job4.png" alt="job4">
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 text after">
                         <p>
@@ -426,7 +454,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11 alert-massege">
-                        <img src="./img/icon/emojione-monotone_white-exclamation-mark.svg" alt="!">
+                        <img src="/img/icon/emojione-monotone_white-exclamation-mark.svg" alt="!">
                         <p>Чем больше работы вы делаете, тем больше мы платим вам, <span>без ограничений в зарплате</span></p>
                     </div>
                 </div>
@@ -471,19 +499,22 @@
                                     </h3>
                                 </div>
                             </div>
-                            <form action="/ajax.php" data-thanks="./thanks-page.html">
+                            <form action="/ajax.php" data-thanks="/thanks-page.php">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="name-2">Введите Ваше имя</label>
-                                        <input type="text" name="name" id="name-2" placeholder="Например, Алексей">
+                                        <input type="text" name="name" id="name-modal" placeholder="Имя" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="tel-2">Введите Ваш телефон</label>
-                                        <input type="tel" name="phone" id="tel-2" placeholder="+7 (___)___-__-__"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$">
+                                        <input type="text" name="surname" id="surname-modal" placeholder="Фамилия" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="email-2">Введите Ваш email</label>
-                                        <input type="email" name="email" id="email-2" placeholder="your-email@mail.com">
+                                        <input type="tel" name="phone" id="tel-modal" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <input type="email" name="email" id="email-modal" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <input type="number" min="10" max="80" name="age" id="age-modal" placeholder="Ваш возраст" required>
                                     </div>
                                 </div>
                                 <div class="row button">
@@ -518,12 +549,12 @@
                 <div class="row content">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 time">
                         <div>
-                            <img src="./img/icon/blue/fluent_timer-3-24-regular.svg" alt="time" class="clock">
+                            <img src="/img/icon/blue/fluent_timer-3-24-regular.svg" alt="time" class="clock">
                             <p>
                                 Узнайте больше о компании Domeo за 1 минуту
                             </p>
                             </div>
-                        <img src="./img/photo.png" alt="photo">
+                        <img src="/img/photo.png" alt="photo">
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text">
                         <p>Domeo работает с 2010 года. </p>
@@ -579,24 +610,27 @@
                                     </h3>
                                 </div>
                             </div>
-                            <form action="/ajax.php" data-thanks="./thanks-page.html">
+                            <form action="/ajax.php" data-thanks="/thanks-page.php">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="name-3">Введите Ваше имя</label>
-                                        <input type="text" name="name" id="name-3" placeholder="Например, Алексей">
+                                        <input type="text" name="name" id="name-modal" placeholder="Имя" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="tel-3">Введите Ваш телефон</label>
-                                        <input type="tel" name="phone" id="tel-3" placeholder="+7 (___)___-__-__"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$">
+                                        <input type="text" name="surname" id="surname-modal" placeholder="Фамилия" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="email-3">Введите Ваш email</label>
-                                        <input type="email" name="phone" id="email-3" placeholder="your-email@mail.com">
+                                        <input type="tel" name="phone" id="tel-modal" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <input type="email" name="email" id="email-modal" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <input type="number" min="10" max="80" name="age" id="age-modal" placeholder="Ваш возраст" required>
                                     </div>
                                 </div>
                                 <div class="row button">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <button type="submit">Посетить офис</button>
+                                        <button type="submit">Записаться на собеседование</button>
                                         <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a></p>
                                     </div>
                                 </div>
@@ -650,19 +684,22 @@
                                     </h3>
                                 </div>
                             </div>
-                            <form action="/ajax.php" data-thanks="./thanks-page.html">
+                            <form action="/ajax.php" data-thanks="/thanks-page.php">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="name-modal">Введите Ваше имя</label>
-                                        <input type="text" name="name" id="name-modal" placeholder="Например, Алексей">
+                                        <input type="text" name="name" id="name-modal" placeholder="Имя" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="tel-modal">Введите Ваш телефон</label>
-                                        <input type="tel" name="phone" id="tel-modal" placeholder="+7 (___)___-__-__"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$">
+                                        <input type="text" name="surname" id="surname-modal" placeholder="Фамилия" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="email-modal">Подтвердите, что вы не бот, введите Ваш email</label>
-                                        <input type="email" name="email" id="email-modal" placeholder="your-email@mail.com">
+                                        <input type="tel" name="phone" id="tel-modal" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <input type="email" name="email" id="email-modal" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <input type="number" min="10" max="80" name="age" id="age-modal" placeholder="Ваш возраст" required>
                                     </div>
                                 </div>
                                 <div class="row button">
@@ -682,7 +719,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 logo">
-                    <img src="./img/logo.png" alt="logo">
+                    <img src="/img/domeoLogo.png" alt="logo">
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <p>Прямые работодатели по ремонту квартир в Москве</p>
@@ -690,11 +727,11 @@
             </div>
         </div>
     </footer>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/jquery.inputmask.bundle.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.inputmask.bundle.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
