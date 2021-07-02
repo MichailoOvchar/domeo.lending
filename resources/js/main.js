@@ -78,6 +78,23 @@ $("form").on("submit", function(){
         return false;
     }
 
+    if($this.find('input[name="name"]').val() === ""  || $this.find('input[name="name"]').val() === null){
+        alert('Некоректное имя или фамилия пользователя');
+        return false;
+    }
+
+    const reg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!reg.test($this.find('input[type=email]').val())){
+        alert('Некоректный email пользователя');
+        return false;
+    }
+
+    let ageValue = +$this.find('input[type=number]').val();
+    if(ageValue < 10 || ageValue > 80){
+        alert('Некоректное возраст пользователя');
+        return false;
+    }
+
     if(verifNumber === true){
 
             $.ajax({

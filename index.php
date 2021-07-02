@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Ищем мастеров по ремонту квартир на постоянную работу в компанию DOMEO</title>
+    <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
 </head>
 <body>
 
@@ -205,24 +206,24 @@
                 <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <label for="name-0"></label>
                             <input type="text" name="name" id="name-0" placeholder="Ваше имя*" required>
                         </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 hiden-lname">
+                            <input type="text" name="lastname" id="lname-0" placeholder="Ваша фамилия" required>
+                        </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <label for="tel-0"></label>
                             <input type="tel" name="phone" id="tel-0" placeholder="Номер телефона*"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <label for="email-0"></label>
                             <input type="email" name="email" id="email-0" placeholder="Ваш email*" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <label for="age-0"></label>
                             <input type="number" min="10" max="80" name="age" id="age-0" placeholder="Ваш возраст*" required>
                         </div>
                     </div>
                     <div class="row button">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="h-captcha" data-sitekey="d82c0adb-69f6-45eb-b2b4-829e8cbf8c32"></div><br>
                             <button type="submit">Получить постоянную работу</button>
                             <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c <a href="/privacy-policy.php">политикой конфиденциальности</a></p>
                         </div>
@@ -376,24 +377,24 @@
                 <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <label for="name-1"></label>
                             <input type="text" name="name" id="name-1" placeholder="Ваше имя*" required>
                         </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 hiden-lname">
+                            <input type="text" name="lastname" id="lname-1" placeholder="Ваша фамилия" required>
+                        </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <label for="tel-1"></label>
                             <input type="tel" name="phone" id="tel-1" placeholder="Номер телефона*"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <label for="email-1"></label>
                             <input type="email" name="email" id="email-1" placeholder="Ваш email*" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <label for="age-1"></label>
                             <input type="number" min="10" max="80" name="age" id="age-1" placeholder="Ваш возраст*" required>
                         </div>
                     </div>
                     <div class="row button">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="h-captcha" data-sitekey="d82c0adb-69f6-45eb-b2b4-829e8cbf8c32"></div><br>
                             <button type="submit">Получить постоянную работу</button>
                             <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c <a href="/privacy-policy.php">политикой конфиденциальности</a></p>
                         </div>
@@ -510,28 +511,24 @@
                             <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="name-2"></label>
                                         <input type="text" name="name" id="name-2" placeholder="Имя" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="surname-2"></label>    
-                                        <input type="text" name="surname" id="surname-2" placeholder="Фамилия" required>
+                                        <input type="text" name="lastname" id="lname-2" placeholder="Фамилия" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="tel-2"></label>
                                         <input type="tel" name="phone" id="tel-2" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="tel-2"></label>
                                         <input type="email" name="email" id="email-2" placeholder="Email" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <label for="age-2"></label>
                                         <input type="number" min="10" max="80" name="age" id="age-2" placeholder="Ваш возраст" required>
                                     </div>
                                 </div>
                                 <div class="row button">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <div class="h-captcha" data-sitekey="d82c0adb-69f6-45eb-b2b4-829e8cbf8c32"></div><br>
                                         <button type="submit">Записаться на собеседование</button>
                                         <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c <a href="/privacy-policy.php">политикой конфиденциальности</a></p>
                                     </div>
@@ -626,10 +623,10 @@
                             <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="text" name="name" id="name-3" placeholder="Имя" required>
+                                        <input type="text" name="name" id="name-2" placeholder="Имя" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="text" name="surname" id="surname-3" placeholder="Фамилия" required>
+                                        <input type="text" name="lastname" id="lname-3" placeholder="Фамилия" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <input type="tel" name="phone" id="tel-3" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
@@ -643,6 +640,7 @@
                                 </div>
                                 <div class="row button">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <div class="h-captcha" data-sitekey="d82c0adb-69f6-45eb-b2b4-829e8cbf8c32"></div><br>
                                         <button type="submit">Записаться на собеседование</button>
                                         <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c <a href="/privacy-policy.php">политикой конфиденциальности</a></p>
                                     </div>
@@ -703,7 +701,7 @@
                                         <input type="text" name="name" id="name-modal" placeholder="Имя" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="text" name="surname" id="surname-modal" placeholder="Фамилия" required>
+                                        <input type="text" name="lastname" id="lname-modal" placeholder="Фамилия" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <input type="tel" name="phone" id="tel-modal" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
@@ -717,6 +715,7 @@
                                 </div>
                                 <div class="row button">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <div class="h-captcha" data-sitekey="d82c0adb-69f6-45eb-b2b4-829e8cbf8c32"></div><br>
                                         <button type="submit">Записаться на собеседование</button>
                                         <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c <a href="/privacy-policy.php">политикой конфиденциальности</a></p>
                                     </div>
