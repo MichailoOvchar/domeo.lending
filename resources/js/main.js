@@ -92,23 +92,21 @@ $("form").on("submit", function(){
                         $this.trigger('submit');
                     }
                     else{
-                        $$this.find('input[type=tel]').addClass('error');
+                        $this.find('input[type=tel]').addClass('error');
                         if($('div').is('.temp') == false){
-                            $$this.find('input[type=tel]').closest('.form-50').after('<div class="form-100 temp" style="text-align: left; font-size: 12px"><span style="display: inline-block; width: 50%;color: red; text-align: left; margin: 0 auto; padding-left: 40px;">Номер телефона недействительный</span></div>');
+                            $this.find('input[type=tel]').closest('.form-50').after('<div class="form-100 temp" style="text-align: left; font-size: 12px"><span style="display: inline-block; width: 50%;color: red; text-align: left; margin: 0 auto; padding-left: 40px;">Номер телефона недействительный</span></div>');
                         }
                         $('.load').addClass('hidden');
-                        $$this.find('button').css('pointer-events', 'unset');
+                        $this.find('button').css('pointer-events', 'unset');
                     }
                 },
                 error: function(response){
                     toastr.error("Error: "+response);
-                    $$this.find('button').css('pointer-events', 'unset');
+                    $this.find('button').css('pointer-events', 'unset');
                 }
             });
         return false;
     }
-
-    window.location.href = $this.data("thanks");
 
     $.ajax({
         url: url,
@@ -116,7 +114,6 @@ $("form").on("submit", function(){
         dataType: "json",
         data: data,
         success: function(response){
-            window.location.href = $this.data("thanks");
             if(response.hasOwnProperty("status")){
                 if(response.status == "success"){
                     window.location.href = $this.data("thanks");
