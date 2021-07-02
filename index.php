@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Лендинг верстка</title>
+    <title>Ищем мастеров по ремонту квартир на постоянную работу в компанию DOMEO</title>
 </head>
 <body>
 
