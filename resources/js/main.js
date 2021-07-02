@@ -64,11 +64,49 @@ $(document).ready(function(){
 //         e.preventDefault();
 //         window.location.href = window.location.href + "/thanks-page.html";
 //     });    
-// } 
+// }
+
+var verifNumber = true;
 
 $("form").on("submit", function(){ 
     let url = $(this).attr("action");
     $this = $(this);
+    let data = $(this).serialize();
+
+    if($this.find('input[type=tel]').val().indexOf('_') > -1){
+        alert('Некоректный номер телефона');
+        return false;
+    }
+
+    if(verifNumber === true){
+
+            $.ajax({
+                url: "/ajax/verifys_sms.php",
+                type: "post",
+                dataType: "html",
+                data: data,
+                success: function(response){
+                    result = $.parseJSON(response);
+                    if(result.status === "ACTIVE"){
+                        verifNumber = false;
+                        $this.trigger('submit');
+                    }
+                    else{
+                        $$this.find('input[type=tel]').addClass('error');
+                        if($('div').is('.temp') == false){
+                            $$this.find('input[type=tel]').closest('.form-50').after('<div class="form-100 temp" style="text-align: left; font-size: 12px"><span style="display: inline-block; width: 50%;color: red; text-align: left; margin: 0 auto; padding-left: 40px;">Номер телефона недействительный</span></div>');
+                        }
+                        $('.load').addClass('hidden');
+                        $$this.find('button').css('pointer-events', 'unset');
+                    }
+                },
+                error: function(response){
+                    toastr.error("Error: "+response);
+                    $$this.find('button').css('pointer-events', 'unset');
+                }
+            });
+        return false;
+    }
 
     window.location.href = $this.data("thanks");
 
@@ -76,6 +114,7 @@ $("form").on("submit", function(){
         url: url,
         type: "post",
         dataType: "json",
+        data: data,
         success: function(response){
             window.location.href = $this.data("thanks");
             if(response.hasOwnProperty("status")){

@@ -202,18 +202,22 @@
                         </h3>
                     </div>
                 </div>
-                <form action="/ajax.php" data-thanks="/thanks-page.php">
+                <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <label for="name-0"></label>
                             <input type="text" name="name" id="name-0" placeholder="Ваше имя*" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <label for="tel-0"></label>
                             <input type="tel" name="phone" id="tel-0" placeholder="Номер телефона*"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <label for="email-0"></label>
                             <input type="email" name="email" id="email-0" placeholder="Ваш email*" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <label for="age-0"></label>
                             <input type="number" min="10" max="80" name="age" id="age-0" placeholder="Ваш возраст*" required>
                         </div>
                     </div>
@@ -369,18 +373,22 @@
                         </h3>
                     </div>
                 </div>
-                <form action="/ajax.php" data-thanks="/thanks-page.php">
+                <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <label for="name-1"></label>
                             <input type="text" name="name" id="name-1" placeholder="Ваше имя*" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <label for="tel-1"></label>
                             <input type="tel" name="phone" id="tel-1" placeholder="Номер телефона*"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <label for="email-1"></label>
                             <input type="email" name="email" id="email-1" placeholder="Ваш email*" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <label for="age-1"></label>
                             <input type="number" min="10" max="80" name="age" id="age-1" placeholder="Ваш возраст*" required>
                         </div>
                     </div>
@@ -499,22 +507,27 @@
                                     </h3>
                                 </div>
                             </div>
-                            <form action="/ajax.php" data-thanks="/thanks-page.php">
+                            <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="text" name="name" id="name-modal" placeholder="Имя" required>
+                                        <label for="name-2"></label>
+                                        <input type="text" name="name" id="name-2" placeholder="Имя" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="text" name="surname" id="surname-modal" placeholder="Фамилия" required>
+                                        <label for="surname-2"></label>    
+                                        <input type="text" name="surname" id="surname-2" placeholder="Фамилия" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="tel" name="phone" id="tel-modal" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
+                                        <label for="tel-2"></label>
+                                        <input type="tel" name="phone" id="tel-2" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="email" name="email" id="email-modal" placeholder="Email" required>
+                                        <label for="tel-2"></label>
+                                        <input type="email" name="email" id="email-2" placeholder="Email" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="number" min="10" max="80" name="age" id="age-modal" placeholder="Ваш возраст" required>
+                                        <label for="age-2"></label>
+                                        <input type="number" min="10" max="80" name="age" id="age-2" placeholder="Ваш возраст" required>
                                     </div>
                                 </div>
                                 <div class="row button">
@@ -610,22 +623,22 @@
                                     </h3>
                                 </div>
                             </div>
-                            <form action="/ajax.php" data-thanks="/thanks-page.php">
+                            <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="text" name="name" id="name-modal" placeholder="Имя" required>
+                                        <input type="text" name="name" id="name-3" placeholder="Имя" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="text" name="surname" id="surname-modal" placeholder="Фамилия" required>
+                                        <input type="text" name="surname" id="surname-3" placeholder="Фамилия" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="tel" name="phone" id="tel-modal" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
+                                        <input type="tel" name="phone" id="tel-3" placeholder="Номер телефона"  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="email" name="email" id="email-modal" placeholder="Email" required>
+                                        <input type="email" name="email" id="email-3" placeholder="Email" required>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <input type="number" min="10" max="80" name="age" id="age-modal" placeholder="Ваш возраст" required>
+                                        <input type="number" min="10" max="80" name="age" id="age-3" placeholder="Ваш возраст" required>
                                     </div>
                                 </div>
                                 <div class="row button">
@@ -684,7 +697,7 @@
                                     </h3>
                                 </div>
                             </div>
-                            <form action="/ajax.php" data-thanks="/thanks-page.php">
+                            <form action="/ajax/ajax.php" data-thanks="/thanks-page.php">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <input type="text" name="name" id="name-modal" placeholder="Имя" required>
