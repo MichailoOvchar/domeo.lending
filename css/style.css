@@ -877,14 +877,12 @@ main #question .interview .list ul li {
   display: flex;
   align-items: center;
 }
-main #question .interview .list ul li i {
-  vertical-align: top;
-  font-size: 40px;
-  color: #DEDEDE;
+main #question .interview .list ul li img {
+  float: left;
 }
 @media (max-width: 1000px) {
-  main #question .interview .list ul li i {
-    font-size: 25px;
+  main #question .interview .list ul li img {
+    width: 25px;
   }
 }
 main #question .interview .list ul li span {
@@ -1209,4 +1207,11 @@ main #thanks-page p span {
   main #thanks-page p {
     font-size: 1.14rem;
   }
+}
+
+main #privacy-policy h1 {
+  text-align: center;
+}
+main #privacy-policy p span {
+  font-weight: 400;
 }
