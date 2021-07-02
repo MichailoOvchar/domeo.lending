@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/fonts/NotoSans/stylesheet.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Страничка с благодарностю</title>
+    <title>Спасибо! Сегодня мы с Вами свяжемся по указанному телефону.</title>
 </head>
 <body>
 
