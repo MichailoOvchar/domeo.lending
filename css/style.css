@@ -1211,7 +1211,14 @@ main #thanks-page p span {
 
 main #privacy-policy h1 {
   text-align: center;
+  font-weight: 700;
+}
+@media (max-width: 1023px) {
+  main #privacy-policy h1 {
+    font-size: 1.8rem;
+  }
 }
 main #privacy-policy p span {
+  font-size: 1rem;
   font-weight: 400;
 }
