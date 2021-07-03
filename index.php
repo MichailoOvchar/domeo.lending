@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v123">
     <title>Ищем мастеров по ремонту квартир на постоянную работу в компанию DOMEO</title>
     <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
 </head>
@@ -744,6 +744,6 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/jquery.inputmask.bundle.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="/js/app.js?v123"></script>
 </body>
 </html>
