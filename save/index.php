@@ -728,6 +728,6 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/jquery.inputmask.bundle.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/app.js?v125"></script>
+    <script src="/js/app.js?v124"></script>
 </body>
 </html>

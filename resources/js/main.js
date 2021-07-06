@@ -1,3 +1,5 @@
+const { result } = require("lodash");
+
 let aElem = document.getElementsByTagName('a');
 let modalObj = document.getElementById('modal');
 let closeModal = document.getElementsByClassName('close')[0];
@@ -74,23 +76,27 @@ $("form").on("submit", function(){
     let data = $(this).serialize();
 
     if($this.find('input[type=tel]').val().indexOf('_') > -1){
+        $this.find('input[type=tel]').addClass('error');
         alert('Некоректный номер телефона');
         return false;
     }
 
-    if($this.find('input[name="name"]').val() === ""  || $this.find('input[name="name"]').val() === null){
+    if($this.find('input[name="name"]').val() == ""  || $this.find('input[name="name"]').val() == null){
+        $this.find('input[name="name"]').addClass('error');
         alert('Некоректное имя или фамилия пользователя');
         return false;
     }
 
     const reg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(!reg.test($this.find('input[type=email]').val())){
+        $this.find('input[type=email]').addClass('error');
         alert('Некоректный email пользователя');
         return false;
     }
 
     let ageValue = +$this.find('input[type=number]').val();
     if(ageValue < 10 || ageValue > 80){
+        $this.find('input[type=number]').addClass('error');
         alert('Некоректное возраст пользователя');
         return false;
     }
@@ -103,8 +109,9 @@ $("form").on("submit", function(){
                 dataType: "html",
                 data: data,
                 success: function(response){
-                    result = $.parseJSON(response);
-                    if(result.status === "ACTIVE"){
+                    results = $.parseJSON(response);
+                    $this.find('button').css('pointer-events', 'none');
+                    if(results.status === "ACTIVE"){
                         verifNumber = false;
                         $this.trigger('submit');
                     }
@@ -113,6 +120,7 @@ $("form").on("submit", function(){
                         if($('div').is('.temp') == false){
                             $this.find('input[type=tel]').closest('.form-50').after('<div class="form-100 temp" style="text-align: left; font-size: 12px"><span style="display: inline-block; width: 50%;color: red; text-align: left; margin: 0 auto; padding-left: 40px;">Номер телефона недействительный</span></div>');
                         }
+                        alert(results.message);
                         $('.load').addClass('hidden');
                         $this.find('button').css('pointer-events', 'unset');
                     }
@@ -131,13 +139,13 @@ $("form").on("submit", function(){
         dataType: "json",
         data: data,
         success: function(response){
-            if(response.hasOwnProperty("status")){
-                if(response.status == "success"){
-                    window.location.href = $this.data("thanks");
-                }
+            results = $.parseJSON(response);
+            if(results.stat == true || results.status == 1){
+                window.location.href = $this.data("thanks");
             }
             else{
-                alert("Error!!!");
+                alert(results.description);
+                $this.find('button').css('pointer-events', 'unset');
             }
         },
         error: function(response){
